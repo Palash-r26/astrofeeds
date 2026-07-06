@@ -2,7 +2,7 @@
    AstroFeeds — Shared Design System
    Fonts: Lora (display / serif headings) + Nunito Sans (body / UI)
    No italic / no cursive anywhere.
-   Top sections use ../assets/images/bg-main.jpg texture.
+   Top sections use ../assets/images/bg-main.webp texture.
    ============================================================= */
 
 :root{
@@ -174,9 +174,9 @@ p{margin:0 0 1rem;color:var(--ink-2);}
 .stat p{color:var(--muted);font-weight:600;margin:0;}
 
 /* ============================================================
-   FEATURE ICON GRID + inner page head (../assets/images/bg-main.jpg)
+   FEATURE ICON GRID + inner page head (../assets/images/bg-main.webp)
    ============================================================ */
-.pagehead{background:url('../../assets/images/bg-main.jpg') center top / cover no-repeat, #FDF3E1;padding:34px 0 46px;position:relative;overflow:hidden;}
+.pagehead{background:url('../../assets/images/bg-main.webp') center top / cover no-repeat, #FDF3E1;padding:34px 0 46px;position:relative;overflow:hidden;}
 .pagehead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:stretch;}
 .icon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
 .zodiac-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
@@ -298,7 +298,7 @@ p{margin:0 0 1rem;color:var(--ink-2);}
 .sun-banner .lookup input::placeholder{color:var(--ink-2);}
 
 /* Coming soon (newsfeed placeholder) */
-.coming{min-height:62vh;display:grid;place-items:center;text-align:center;background:url('../../assets/images/bg-main.jpg') center top/cover no-repeat,#FDF3E1;padding:60px 0;}
+.coming{min-height:62vh;display:grid;place-items:center;text-align:center;background:url('../../assets/images/bg-main.webp') center top/cover no-repeat,#FDF3E1;padding:60px 0;}
 .coming .mandala{width:110px;opacity:.85;margin:0 auto 22px;animation:spin 40s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg);}}
 .coming h1{font-size:2.6rem;font-weight:600;}
@@ -347,4 +347,5 @@ p{margin:0 0 1rem;color:var(--ink-2);}
    ============================================================ */
 .pill-btn { display: flex; align-items: center; gap: 14px; padding: 18px 26px; border: 1px solid var(--line); border-radius: 40px; background: #fff; color: var(--ink); font-weight: 500; font-size: 1.05rem; box-shadow: var(--shadow-sm); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
 .pill-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
 
