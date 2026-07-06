@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Kundli — Online Janam Kundli &amp; Birth Chart | AstroFeeds</title>
+  <meta name="description"
+    content="Generate your free online Janam Kundli / birth chart with AstroFeeds — Sun sign, Moon sign, Ascendant, Nakshatra and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Lora:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="top-bg" style="background: url('assets/images/bg-main.jpg') center top / cover no-repeat;">
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <svg class="moon" viewBox="0 0 24 24" fill="#F6981E">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" />
+          </svg>
+          astrofeeds
+        </a>
+        <button class="nav-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+        <ul class="nav-links">
+          <li><a href="free-kundli.html" class="active">Free Kundli</a></li>
+          <li><a href="matchmaking.html">Matchmaking</a></li>
+          <li><a href="zodiac-signs.html">Zodiac Sign</a></li>
+          <li><a href="newsfeed.html">NewsFeed</a></li>
+          <li><a href="forecast.html">Forecasts</a></li>
+        </ul>
+        <div class="nav-icons"><i class="bi bi-heart"></i><i class="bi bi-cart3"></i></div>
+      </div>
+    </header>
+
+    <!-- ===== PAGE HEAD: feature grid + chart card ===== -->
+    <section class="pagehead" style="background:transparent; padding:34px 0 46px; position:relative; overflow:hidden;">
+      <div class="container pagehead-grid">
+        <div class="icon-grid" >
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/1.png" alt="Kundli"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Kundli</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/2.png" alt="Match Making"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Match Making</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/3.png" alt="Ascendant"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Ascendant</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/4.png" alt="Mahadasha"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Mahadasha</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/5.png" alt="Dosha"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Dosha</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/6.png" alt="House"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">House</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/7.png" alt="Yog"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Yog</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/8.png" alt="Dasha"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Dasha</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/9.png" alt="Love"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Love</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/10.png" alt="Types"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Types</div></div>
+          <div class="icon-card text-center" style="padding-bottom:12px; cursor:pointer;"><img src="assets/images/icons/11.png" alt="Yog"><div style="color:#C6A15B; font-weight:700; font-size:0.85rem; margin-top:6px;">Yog</div></div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-end; text-align:right;">
+          <img src="assets/images/hero-kundli.png" alt="Free Kundli Chart" style="width:100%; max-height:280px; object-fit:cover; border-radius:24px; margin-bottom:24px; box-shadow:var(--shadow-sm);">
+          <div class="divider" style="justify-content:flex-end; margin-bottom:16px; width:100%; max-width:300px;"><span></span></div>
+          <h2 style="font-family:var(--f-display); font-size:2.6rem; font-weight:700; color:var(--ink); margin-bottom:12px; line-height:1.2;">Free Online Kundli</h2>
+          <p style="color:var(--ink-2); font-size:1.05rem; line-height:1.7; max-width:420px; margin:0;">A Kundli or Kundali is also known as the birth chart, is simply an astrological chart that provides insights into your life events by analyzing positions of celestial bodies. Consider it the horoscope by date of birth, as it only uses your date of birth, place, and time.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== KUNDLI FORM ===== -->
+  <section class="section" style="padding-top:46px; position:relative; overflow:hidden;">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Kundali</h2>
+        <div class="divider"><span></span></div>
+        <p>Enter your birth details to generate your personalized Janam Kundli snapshot.</p>
+      </div>
+
+      <form class="formcard tint" id="kundliForm" novalidate style="max-width:760px;margin:0 auto">
+        <div class="form-grid">
+          <div class="field"><label>Name</label><input name="name" type="text" placeholder="Full name"><small
+              class="err"></small></div>
+          <div class="field"><label>Birth Country</label>
+            <select name="country">
+              <option value="">Select country</option>
+              <option selected>India</option>
+              <option>Nepal</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>Date of Birth</label><input name="dob" type="date"><small class="err"></small></div>
+          <div class="field"><label>Time of Birth</label><input name="tob" type="time"></div>
+          <div class="field"><label>Gender</label>
+            <select name="gender">
+              <option value="">Select</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label>State of Birth</label><input name="state" type="text" placeholder="State"></div>
+          <div class="field"><label>City of Birth</label><input name="city" type="text" placeholder="City"></div>
+          <div class="field"><label>Preferred Feed Time</label><input name="feed" type="time"></div>
+          <div class="field full"><label>WhatsApp No.</label><input name="wa" type="tel" placeholder="+91"></div>
+          <div class="field full" style="align-items:center">
+            <button class="btn btn-primary btn-lg" type="submit">Check Your Horoscope</button>
+          </div>
+        </div>
+        <p class="form-note">*Please read the Terms &amp; Condition and Privacy Policy.</p>
+      </form>
+      <div class="container" style="max-width:760px;padding:0">
+        <div class="result" id="kundliResult" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="section" style="padding-top:0; position:relative; overflow:hidden;">
+    <div class="wm" style="top:15%;right:-150px;width:650px;opacity:0.06;"><img src="assets/images/mandala-2.png" alt=""></div>
+    <div class="container content" style="max-width:860px; position:relative; z-index:1;">
+      <h3>What Is a Janam Kundali or Birth Chart?</h3>
+      <p>A Janam Kundali, or Birth chart, is like a cosmic blueprint of your life. Vedic astrologers create your Kundli
+        based on your exact birth date, birthplace, and birth time. It's like a roadmap that shows the exact positions
+        of planets, zodiac signs, houses, and all major astrological aspects present at the time of your birth. These
+        aspects in your natal or birth chart are considered significant in an astrological analysis.</p>
+      <p>Vedic astrology uses your Kundli chart to interpret your destiny, personality, strengths, and weaknesses.
+        Astrologers can provide insights into various aspects of your life, including career, relationships, and wealth,
+        by analyzing your Kundli online or offline. Moreover, your Janam Kundali can reveal patterns and influences that
+        can shape your journey through life.</p>
+
+      <h3>Why Are Your Date of Birth and Time Important for Your Kundli?</h3>
+      <p>Creating a Kundli by date of birth and time is critical to getting the most accurate and precise horoscope
+        chart. Since each person is unique from birth, knowing your exact birth moment can help you obtain accurate
+        astrological information for making your Kundli. Without these specifics, your Kundali prediction will be
+        incomplete. During an online consultation, our astrologers will request your birth details to create a unique
+        and detailed birth chart.</p>
+
+      <h3>What Are The Benefits of Janam Kundali Or Horoscope Reading?</h3>
+      <p>With the help of a Janam Kundli or online horoscope reading, you can gain personalized insights into your life.
+        It provides these benefits essential throughout your life:</p>
+      <p><strong>Deal With Ups and Downs:</strong> It helps you identify your good and bad times and navigate through
+        ups and downs.</p>
+      <p><strong>Reveals Your Purpose in Life:</strong> Your Kundli reveals your life's purpose, destiny and karmic
+        patterns — a road map for your journey.</p>
+      <p><strong>Helps in Taking Better Decisions:</strong> With a birth chart calculator you can make better decisions
+        about career, education, love, marriage, money and family.</p>
+      <p><strong>Deal With Doshas:</strong> Your Kundli can assist you in overcoming obstacles and dealing with doshas,
+        improving your overall well-being.</p>
+      <p><strong>Navigate Issues in Relationships:</strong> Understanding your Kundli helps you navigate relationships
+        with family and friends, fixing communication issues and building harmonious connections.</p>
+      <p><strong>Deeper Understanding of Yourself:</strong> Connecting with your Kundli helps gain a deeper
+        understanding of who you are — a manual for personal development and self-discovery.</p>
+
+      <h3>Create Your Free Online Kundali Using Our Kundali Making Software</h3>
+      <p>Astrology has gone digital, making it more accessible than ever. AstroFeeds's free Kundali making software
+        generates an online horoscope for free. AstroFeeds's Kundali software is a feature trusted by millions of users
+        across the globe to get accurate and detailed predictions about themselves. Our free online kundali maker will
+        provide you with a thorough understanding of your destiny, allowing you to make more accurate and precise
+        decisions in life.</p>
+      <p>If you want to get your Kundli online, our mobile app, available on Android and iOS, will be a valuable asset.
+        It has some fabulous features for astrology enthusiasts. Our Kundli software is multilingual and supports both
+        English and Hindi. So, whether you want your Janam kundli in Hindi or English, our software will provide
+        immediate access to your birth chart information.</p>
+      <p>Once you have a basic analysis of your horoscope, you can consult AstroFeeds's expert astrologers online for
+        more detailed and accurate Kundli predictions. The best thing is that you can talk to the top astrologers online
+        24/7, from the convenience of your home or on the go.</p>
+
+      <a class="lead-link" href="#" style="font-style:italic; font-weight:700; text-align:left; margin-bottom: 24px;">If
+        you want to talk to professional Kundli Astrologers on AstroFeeds, click here.</a>
+
+      <h3>How Does The AstroFeeds Free Kundali Software or Birth Chart Calculator Help You?</h3>
+      <p>You can utilize this online Kundli software to generate a free Janam Kundli; it holds the key to realizing your
+        full potential and understanding the course of your life. As you already know, your Kundli can help in finding
+        the right partner for marriage, new career opportunities, launching a business, and even making sure everything
+        goes smoothly in the present. The astrological Kundli maker offers accurate information about you based on
+        astrological calculations and planetary positions.</p>
+      <p>With AstroFeeds's free Kundli-making tool, you can verify some of the following information:</p>
+
+      <p style="margin-bottom:8px;">Horoscope chart with a geometrical diagram consisting of planets, zodiac lords, and
+        kundali houses</p>
+      <p style="margin-bottom:8px;">Planetary details during your birth</p>
+      <p style="margin-bottom:8px;">Kundli Dosha, whether present or absent</p>
+      <p style="margin-bottom:8px;">Daily Nakshatra predictions</p>
+      <p style="margin-bottom:8px;">Planetary Dasha details</p>
+      <p style="margin-bottom:8px;">Favorable Vedic astrology and Numerology details</p>
+      <p style="margin-bottom:18px;">Remedies</p>
+
+      <p>Get in Touch with AstroFeeds Experts for a Kundli Analysis<br>
+        AstroFeeds's Kundli page provides a free online Kundli that contains all the basic information required to
+        analyze your horoscope. After all, astrology is a vast and deep ocean of knowledge.</p>
+      <p>Therefore, to fully understand the intricacies of your Kundli and receive accurate interpretations and
+        predictions, consult the top astrologers on AstroFeeds via call or chat.</p>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><svg class="moon" viewBox="0 0 24 24" fill="#F6981E">
+              <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" />
+            </svg> astrofeeds</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="free-kundli.html">Free Kundli</a></li>
+            <li><a href="#">Whatsapp Chat</a></li>
+            <li><a href="#">Astro Mall</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>About Us</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="newsfeed.html">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Info.</h5>
+          <address>T2/13 DLF Phase 3,<br>Gurugram, Haryana</address>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">copyright 2025 All Rights Reserved to AstroFeeds</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+

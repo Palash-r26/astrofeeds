@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kundli Matchmaking — Kundali Milan for Marriage | AstroFeeds</title>
+<meta name="description" content="Free Kundali Matching (Guna Milan / Ashtakoot) for marriage — check compatibility of two birth charts with AstroFeeds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Lora:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bg" style="background: url('assets/images/bg-main.jpg') center top / cover no-repeat;">
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><svg class="moon" viewBox="0 0 24 24" fill="#F6981E"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg> astrofeeds</a>
+    <button class="nav-toggle" aria-label="Menu"><i class="bi bi-list"></i></button>
+    <ul class="nav-links">
+      <li><a href="free-kundli.html">Free Kundli</a></li>
+      <li><a href="matchmaking.html" class="active">Matchmaking</a></li>
+      <li><a href="zodiac-signs.html">Zodiac Sign</a></li>
+      <li><a href="newsfeed.html">NewsFeed</a></li>
+      <li><a href="forecast.html">Forecasts</a></li>
+    </ul>
+    <div class="nav-icons"><i class="bi bi-heart"></i><i class="bi bi-cart3"></i></div>
+  </div>
+</header>
+
+<section class="pagehead" style="background:transparent; padding:34px 0 46px; position:relative; overflow:hidden;">
+  <div class="container pagehead-grid">
+    <div class="icon-grid">
+      <div class="icon-card"><img src="assets/images/icons/1.png" alt="Kundli"></div>
+      <div class="icon-card"><img src="assets/images/icons/2.png" alt="Match Making"></div>
+      <div class="icon-card"><img src="assets/images/icons/3.png" alt="Ascendant"></div>
+      <div class="icon-card"><img src="assets/images/icons/4.png" alt="Mahadasha"></div>
+      <div class="icon-card"><img src="assets/images/icons/5.png" alt="Dosha"></div>
+      <div class="icon-card"><img src="assets/images/icons/6.png" alt="House"></div>
+      <div class="icon-card"><img src="assets/images/icons/7.png" alt="Yog"></div>
+      <div class="icon-card"><img src="assets/images/icons/8.png" alt="Dasha"></div>
+      <div class="icon-card"><img src="assets/images/icons/9.png" alt="Love"></div>
+      <div class="icon-card"><img src="assets/images/icons/10.png" alt="Types"></div>
+      <div class="icon-card"><img src="assets/images/icons/11.png" alt="Yog"></div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-end; text-align:right;">
+      <img src="assets/images/hero-matchmaking.png" alt="Matchmaking" style="width:100%; max-height:280px; object-fit:cover; border-radius:24px; margin-bottom:24px; box-shadow:var(--shadow-sm);">
+      <div class="divider" style="justify-content:flex-end; margin-bottom:16px; width:100%; max-width:300px;"><span></span></div>
+      <h2 style="font-family:var(--f-display); font-size:2.6rem; font-weight:700; color:var(--ink); margin-bottom:12px; line-height:1.2;">Kundali Matching<br>For Marriage</h2>
+      <p style="color:var(--ink-2); font-size:1.05rem; line-height:1.7; max-width:420px; margin:0;">Kundali Milan, also known as Kundli Matching or Horoscope Matching, is a comparison of two natal charts.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="section" style="padding-top:46px">
+  <div class="wm" style="top:16%;right:-70px;width:240px"><img src="assets/images/mandala-2.png" alt=""></div>
+  <div class="container">
+    <div class="section-head">
+      <h2>Kundli Matchmaking</h2>
+      <div class="divider"><span></span></div>
+      <p>Discover true compatibility and build a lifelong bond guided by the stars.</p>
+    </div>
+
+    <form class="formcard tint" id="matchForm" novalidate style="max-width:820px;margin:0 auto">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-title">Bride's Details</div>
+          <div class="field"><label>Name</label><input name="brideName" type="text" placeholder="Bride's name"><small class="err"></small></div>
+          <div class="field"><label>Date of Birth</label><input name="brideDob" type="date"><small class="err"></small></div>
+          <div class="field"><label>Time of Birth</label><input name="brideTob" type="time"></div>
+          <div class="field"><label>Place of Birth</label><input name="bridePob" type="text" placeholder="City"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-title">Groom's Details</div>
+          <div class="field"><label>Name</label><input name="groomName" type="text" placeholder="Groom's name"><small class="err"></small></div>
+          <div class="field"><label>Date of Birth</label><input name="groomDob" type="date"><small class="err"></small></div>
+          <div class="field"><label>Time of Birth</label><input name="groomTob" type="time"></div>
+          <div class="field"><label>Place of Birth</label><input name="groomPob" type="text" placeholder="City"></div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:16px">
+        <button class="btn btn-primary btn-lg" type="submit">Match Your Kundli</button>
+      </div>
+    </form>
+    <div class="container" style="max-width:820px;padding:0"><div class="result" id="matchResult" hidden></div></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0; position:relative; overflow:hidden;">
+  <div class="wm" style="top:15%;right:-150px;width:650px;opacity:0.06;"><img src="assets/images/mandala-2.png" alt=""></div>
+  <div class="container content" style="max-width:860px; position:relative; z-index:1;">
+    <p>In Vedic astrology, a Kundli Milan is used to determine a couple's compatibility for a happy and fulfilling marriage. Two people about to get married can gain a deeper understanding of each other and the potential for a prosperous marriage through the process of Kundli matching. If problems arise, Kundli matchmaking ensures to offer solutions for a happy marriage. In simple words, this process provides an astrological prediction for how happy, peaceful, and prosperous the couple's marriage will be.</p>
+
+    <h3>Kundli Matching | Horoscope Matching | Gun Milan</h3>
+    <p>Marriage marks a turning point in the lives of two people and their families. This union brings two hearts and families closer, creating a shared journey of life. Also, it won't be wrong to say we have witnessed at least one marriage and seen various rituals performed.</p>
+    <p>In a Hindu marriage, certain rituals are performed. This is because many families prefer to match their children's detailed birth charts to see whether their stars are compatible so that they can get married.</p>
+
+    <h3>So What Does This Kundli Matching or Marriage Matching Mean?</h3>
+    <p>Kundli matching for marriage is an important step in Indian households because most people have immense faith in the Kundli Milan tradition of Vedic astrology. Here, the Moon's placement plays a very important role.</p>
+    <p>Also, the Moon's placement in the horoscope provides the astrologers with the Janam Rashi (Moon Sign) and Nakshatra (Constellation) of the individual, which are two key aspects of Vedic Astrology.</p>
+
+    <h3>Why Kundali Milan or Patrika Matching Is Important for Marriage?</h3>
+    <p>In Vedic astrology, marriage is considered one of the most significant milestones of life. With the help of kundali matching, you find out how compatible you are with your partner on emotional, physical, and spiritual levels before you get married. The reasons why kundli milan or patrika matching is essential are:</p>
+    
+    <p><strong>Compatibility Check:</strong> Kundali Milan highlights lifestyle, value, and mindset differences between you and your partner. For instance, you may prefer staying home while your partner enjoys an active social life; this insight helps you both prepare for balance and adjustments.</p>
+    <p><strong>Guna Milan Score:</strong> Guna Milan score evaluates harmony in the emotional, physical, and spiritual aspects of marriage. So, if your score with your partner is low in areas like trust or emotional bonding, it signals where extra effort is needed to strengthen your relationship.</p>
+    <p><strong>Health &amp; Well-being:</strong> Kundali matching for marriage can also reveal health-related tendencies for you or your partner. For example, if one chart shows frequent health issues, remedies can be suggested so you both can maintain a healthier and happier married life.</p>
+    <p><strong>Financial Stability:</strong> Astrology also checks financial prospects after marriage. Suppose your chart shows career ups and downs, while your partner's indicates steady growth. Taking proper guidance from an astrologer helps you plan money matters smartly and avoid stress.</p>
+    <p><strong>Longevity &amp; Harmony:</strong> It predicts long-term stability and harmony in your relationship. For example, if your charts indicate ego clashes or frequent disagreements, astrologers recommend remedies to reduce conflicts and nurture a peaceful bond.</p>
+
+    <h3>Kundli Matching: Understanding Mangal Dosha and Its Influence</h3>
+    <p>According to the Hindu tradition, marital life will be better if the Gunas are matched in Kundli Milan before the wedding. Nevertheless, if there is a Dosha in the Kundli, the couple must address it and take the right steps as necessary. Also, astrological belief states that the marriage will have discord if these defects are ignored and the marriage is conducted.</p>
+    <p>Moreover, the most important aspect of Kundli Milan is that the person's horoscope should not contain any 'Manglik Dosha'. If the horoscope contains a Manglik or Mangal Dosha, it is considered appropriate to marry someone with a Mangal Dosha.</p>
+    <p>It is not recommended that horoscope matching between Manglik and non-Manglik couples be performed. In such a case, astrologers can offer effective solutions to alleviate the Dosha.</p>
+
+    <h3>How Kundali Matching by Date of Birth Differs from Kundli Matching by Name?</h3>
+    <p>Kundali matching can be done either by using the couple's date of birth or by their names. While both methods are good for checking compatibility, the approach and accuracy of predictions are different, giving unique insights into the relationship.</p>
+    <p>That said, let's find out more about the two ways to match the horoscopes of two individuals to check their marriage compatibility.</p>
+    
+    <p><strong>Kundli Matching by Name -</strong> The Kundali Matching by Name method verifies a couple's compatibility using their names. This is because it includes a marriage compatibility analysis where the bride and groom's Gunas are verified by name, this is also known as Guna Milan by Name.</p>
+    <p><strong>Kundli Matching by Date of Birth -</strong> Kundli Matching by date of birth, also known as Lagna Patrika or Janam Patrika Matching, is based on the ancient Ashtakoota method. This method determines the compatibility of two people based on their birth details, such as the time, place, and date of birth.</p>
+    <p>Once you get done with Kundali Matching by name and date of birth, you can determine your astrological birth chart facts, which will help you make sound decisions regarding marriage. However, before making important marriage-related decisions, you should consult an experienced astrologer for more precise predictions.</p>
+
+    <h3>Gun Milan Process For Marriage</h3>
+    <p>In India, the whole process of Kundli Matching is based on the Janam Kundli (birth chart or natal chart) of the couple. An astrologer will check the position of the Moon on the birth chart of both people and start the Guna Milan process. Guna Milan is also known as "Ashtakoota Milan," with "Ashta" meaning "eight" and "Koota" meaning "Aspects." Here are the eight kootas in detail:</p>
+    
+    <p><strong>Varna (Spiritual Compatibility):</strong> Varna assesses the spiritual alignment and ego levels of both individuals. It categorizes individuals into four groups: Brahmin, Kshatriya, Vaishya, and Shudra.</p>
+    <p><strong>Vashya (Influence and Control):</strong> Vashya examines the power dynamics between partners, determining who will have more influence in the relationship. It classifies individuals into categories like manav (human), vanchar (wild animals), Chatushpad (small animals), Jalchar (waterborne animals), Keeta/Keet (insects).</p>
+    <p><strong>Tara (Birth Star Compatibility):</strong> Tara evaluates the compatibility of the couple's birth stars (Nakshatras). The position of the stars at birth influences the couple's well-being and longevity.</p>
+    <p><strong>Yoni (Sexual Compatibility):</strong> Yoni assesses the sexual and emotional compatibility between partners. It is classified into 14 animals, namely Horse, Elephant, Sheep, Snake, Dog, Cat, Rat, Cow, Buffalo, Tiger, Hare/Deer, Monkey, Lion, and Mongoose.</p>
+    <p><strong>Graha Maitri (Mental Compatibility):</strong> Graha Maitri reflects the mental compatibility and natural affection between the partners. It denotes how well the individuals understand and connect on an intellectual level.</p>
+    <p><strong>Gana (Temperament Compatibility):</strong> Gana indicates the mutual behaviors, mental compatibility, and temperaments of the prospective bride and groom. Its nakshatras are divided into three categories- Deva (God), Manava (Human), and Rakshasa (Demon).</p>
+
+    <a class="lead-link" href="#" style="font-weight:700; margin-top:24px;">Want a detailed Kundli Milan report? Talk to our astrologers.</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><svg class="moon" viewBox="0 0 24 24" fill="#F6981E"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg> astrofeeds</a>
+      </div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="free-kundli.html">Free Kundli</a></li><li><a href="#">Whatsapp Chat</a></li><li><a href="#">Astro Mall</a></li></ul></div>
+      <div class="footer-col"><h5>About Us</h5><ul><li><a href="#">About</a></li><li><a href="newsfeed.html">Blogs</a></li><li><a href="#">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Contact Info.</h5><address>T2/13 DLF Phase 3,<br>Gurugram, Haryana</address></div>
+    </div>
+  </div>
+  <div class="footer-bottom">copyright 2025 All Rights Reserved to AstroFeeds</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
