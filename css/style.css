@@ -99,7 +99,6 @@ p{margin:0 0 1rem;color:var(--ink-2);text-align:justify;}
 .nav{display:flex;align-items:center;justify-content:space-between;height:70px;}
 .brand{display:flex;align-items:center;gap:9px;font-family:var(--f-body);font-weight:800;font-size:1.5rem;color:var(--ink);letter-spacing:-.5px;}
 .brand .moon{width:23px;height:23px;display:inline-block;}
-.nav .brand .moon{display:none;}
 .nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0;}
 .nav-links a{font-size:.92rem;font-weight:600;color:var(--ink-2);position:relative;padding:6px 0;transition:color .18s;}
 .nav-links a:hover{color:var(--orange);}
