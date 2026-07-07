@@ -293,6 +293,44 @@ document.addEventListener('DOMContentLoaded',()=>{
       f.innerHTML=`<div style="text-align:center;padding:6px 0"><i class="bi bi-check-circle-fill text-green" style="font-size:1.6rem"></i><p style="margin:8px 0 0">Thank you! Your personalized AstroFeed is on its way to WhatsApp.</p></div>`;
     });
   });
+  /* ============ AUTO SLIDE SUBSCRIPTION PLANS (mobile) ============ */
+  const plansContainer = document.querySelector('.plans');
+  if (plansContainer) {
+    let isInteracting = false;
+    let slideIndex = 0;
+    let direction = 1; // 1 = forward, -1 = backward
+
+    plansContainer.addEventListener('touchstart', () => isInteracting = true, {passive: true});
+    plansContainer.addEventListener('touchend', () => {
+      setTimeout(() => isInteracting = false, 2000);
+    }, {passive: true});
+
+    setInterval(() => {
+      if (isInteracting) return;
+      // Only slide when cards overflow (i.e. mobile flex layout)
+      if (plansContainer.scrollWidth <= plansContainer.clientWidth + 5) return;
+
+      const cards = plansContainer.querySelectorAll('.plan');
+      if (!cards.length) return;
+
+      // Move index
+      slideIndex += direction;
+
+      // Ping-pong: reverse direction at ends
+      if (slideIndex >= cards.length - 1) {
+        slideIndex = cards.length - 1;
+        direction = -1;
+      } else if (slideIndex <= 0) {
+        slideIndex = 0;
+        direction = 1;
+      }
+
+      // Scroll to the card
+      const gap = 16;
+      const scrollPos = slideIndex * (cards[0].offsetWidth + gap);
+      plansContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
+    }, 2000);
+  }
 });
 
 /* helpers */
