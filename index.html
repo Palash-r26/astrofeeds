@@ -85,9 +85,9 @@
             <div class="form-grid">
               <div class="field"><label>Name</label><input name="name" type="text" placeholder="Full name"><small
                   class="err"></small></div>
-              <div class="field"><label>Date of Birth</label><input name="dob" type="date" placeholder="DD/MM/YYYY"><small class="err"></small>
+              <div class="field"><label>Date of Birth</label><input name="dob" type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.value==''?this.type='text':this.type='date')"><small class="err"></small>
               </div>
-              <div class="field"><label>Time of Birth</label><input name="tob" type="time" placeholder="HH:MM AM/PM"></div>
+              <div class="field"><label>Time of Birth</label><input name="tob" type="text" placeholder="HH:MM AM/PM" onfocus="(this.type='time')" onblur="(this.value==''?this.type='text':this.type='time')"></div>
               <div class="field"><label>Birth Country</label><input name="country" type="text" placeholder="India">
               </div>
               <div class="field"><label>Birth State</label><input name="state" type="text" placeholder="Select state">
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col-lg-6 offset-lg-1">
-          <h2 style="font-size:2.2rem; margin-bottom: 24px;">It All Begins With You</h2>
+          <h2 class="text-center" style="font-size:2.2rem; margin-bottom: 24px;">It All Begins With You</h2>
           <ul class="checklist" style="gap:16px; display:flex; flex-direction:column; margin-bottom:34px;">
             <li><span>✅</span> Enter your Name</li>
             <li><span>📅</span> Select your Date, Time, and Place of Birth</li>
@@ -234,14 +234,14 @@
   <!-- ============ WHATSAPP CTA ============ -->
   <section class="section" style="background:var(--cream-2)">
     <div class="container wa-band">
-      <div>
+      <div class="text-center">
         <h2>Would you like to receive personalized daily messages on
           <span class="highlight">love &amp; relationships</span>,
           <span class="highlight">career growth</span>,
           <span class="highlight">financial and health</span> horoscopes delivered directly to your
           <span class="green">WhatsApp</span>?
         </h2>
-        <div class="divider" style="justify-content:flex-start"><span></span></div>
+        <div class="divider" style="justify-content:center"><span></span></div>
       </div>
       <div class="wa-wheel"><img src="assets/images/wa-wheel.webp" alt="Zodiac wheel"></div>
     </div>
@@ -342,7 +342,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">copyright 2025 All Rights Reserved to AstroFeeds</div>
+    <div class="footer-bottom">Copyright 2026 All Rights Reserved to AstroFeeds</div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
