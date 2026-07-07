@@ -331,6 +331,21 @@ document.addEventListener('DOMContentLoaded',()=>{
       plansContainer.scrollTo({ left: scrollPos, behavior: 'smooth' });
     }, 2000);
   }
+
+  /* ============ LOGO LOOP MARQUEE (Zodiac Pills) ============ */
+  const pillGrid = document.querySelector('.pill-grid');
+  if (pillGrid && window.innerWidth <= 960) {
+    const track = document.createElement('div');
+    track.className = 'marquee-track';
+    while(pillGrid.firstChild) {
+      track.appendChild(pillGrid.firstChild);
+    }
+    pillGrid.appendChild(track);
+    
+    const trackClone = track.cloneNode(true);
+    trackClone.setAttribute('aria-hidden', 'true');
+    pillGrid.appendChild(trackClone);
+  }
 });
 
 /* helpers */
